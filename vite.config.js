@@ -182,6 +182,8 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: '/b2b-app-using-Hostinger/', 
+	plugins: [react()],
 	customLogger: logger,
 	plugins: [react(), addTransformIndexHtml],
 	server: {
